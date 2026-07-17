@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Login Form</h1>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .inputfields{
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-left: 14px;
+            margin-right: 14px;
+        }   
+    </style>
+    <script>
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let email = document.getElementById("email").value;
+
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            console.log(name, phone, email, username, password);
+        }
+    </script>
+</head>
+<body>
+    <div >
+        <label for="username">Username:</label>
+    <input class = "inputfields" type="text" id="username" placeholder="Enter your username">
+    <br>
+
+    <label for="password">Password:</label>
+    <input class = "inputfields" type="password" id="password" placeholder="Enter your password">
+    <br>
+    <label for="email">Email:</label>
+    <input class = "inputfields"     type="email" id="email" placeholder="Enter your email">
+    <br>
+    <label for="name">Name:</label>
+    <input class = "inputfields" type="text" id="name" placeholder="Enter your name   ">
+    <br>
+    <label for="phone">Phone:</label>
+    <input class = "inputfields"    type="number" id="phone" placeholder="Enter your phone number">
+    <br>    
+    <button onclick="login()">Login</button>
+    </div>
+    
+
+</body>
+</html>
